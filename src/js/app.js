@@ -1,17 +1,15 @@
-/**
- * <Создание объекта персонажа с определенным именем и типом>
- *
- *
- * @param {string} name - Имя создаваемого персонажа
- * @param {string} type - Вид персонажа
- *
- * @throws Выбрасывает ошибку, если имя персонажа менее 2 символов или более 10,
- * если передаваемый вид 'undefined',
- * если передается !string
- */
+import Bowman from './Bowman';
+import Swordsman from './Swordsman';
+import Magician from './Magician';
+import Undead from './Undead';
+import Zombie from './Zombie';
+import Daemon from './Daemon';
 
+const bow = new Bowman('Bow');
+const sword = new Swordsman('Sword');
+const mag = new Magician('Mag');
+const undead = new Undead('Нежить');
+const zombie = new Zombie('Зомби');
+const daemon = new Daemon('Демон');
 
-function Character(name, type) {
-  this.name = name;
-  this.type = type;
-}
+console.log(bow, sword, mag, undead, zombie, daemon);
